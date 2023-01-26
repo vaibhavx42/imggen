@@ -2,7 +2,7 @@ document.getElementById('getDetail').addEventListener('click', getApi);
 function getApi() {
     var AnimeName = document.getElementById('animeName').value;
 console.log(AnimeName)
-const url=`https://api.waifu.pics/sfw/${AnimeName.toLowerCase()}
+const url=`https://api.waifu.pics/sfw/${AnimeName.toLowerCase()}`; 
 console.log(url);
 fetch(url)
     .then((res) => res.json())
